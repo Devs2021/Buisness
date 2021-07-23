@@ -3,7 +3,7 @@ import formImg from '../../../assets/home-page/form-img.jpg'
 
 const ContactForm = () => {
     return (
-        <div className="relative py-8 px-10 rounded-md max-w-screen-md" style={{backgroundColor: '#eee'}}>
+        <div className="relative py-8 px-10 rounded-md max-w-screen-md mx-auto" style={{backgroundColor: '#eee'}}>
             <h3 className="font-secondary font-semibold mb-6">Contact Form</h3>
             <form action="" className="max-w-lg">
                 <div className="mb-4">

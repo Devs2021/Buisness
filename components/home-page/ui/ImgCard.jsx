@@ -8,7 +8,7 @@ import time from '../../../assets/home-page/icons/time.svg'
 
 const ImgCard = ({img}) => {
     return (
-        <div className="bg-white rounded-md shadow-md p-4">
+        <div className="bg-white rounded-md shadow-md p-4 shadow-md">
             <div className="rounded-md relative" style={{maxHeight:340}}>
                 <Image
                     src={img}

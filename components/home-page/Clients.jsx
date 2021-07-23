@@ -10,7 +10,7 @@ const Clients = () => {
                question="What our clients say about us?"
                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat interdum dolor enim justo."
            />
-            <div className="relative">
+            <div className="relative text-center">
                 <Image
                     src={map}
                     width={1440}

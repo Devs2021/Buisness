@@ -1,8 +1,8 @@
 import ImgCard from "./ui/ImgCard"
 import Title from "./ui/Title"
-import project1 from '../../assets/home-page/project1.jpg'
-import project2 from '../../assets/home-page/project2.jpg'
-import project3 from '../../assets/home-page/project3.jpg'
+import project1 from '../../assets/global/project1.jpg'
+import project2 from '../../assets/global/project2.jpg'
+import project3 from '../../assets/global/project3.jpg'
 import Image from "next/image"
 import about from '../../assets/home-page/aboutus.jpg';
 import styles from '../../styles/home-page/projects.module.css'
@@ -16,7 +16,7 @@ const Projects = () => {
                     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci fusce blandit facilisis enim potenti vulputate quisque. Nunc suspendisse urna lobortis quisque pellentesque tempor, pellentesque tortor. Est, vitae volutpat ullamcorper enim."
                 />
            <div className="py-16 px-10 bg-dark-blue">
-            <div className="max-w-screen-xl px-10">
+            <div className="max-w-screen-xl mx-auto px-10">
                     <div className="grid grid-cols-3 gap-12">
                     <ImgCard img={project1}/>
                     <ImgCard img={project2}/>
@@ -26,7 +26,7 @@ const Projects = () => {
             </div>
             <div className="max-wscreen-xl mx-auto px-10">
             <div className="pt-20 grid grid-cols-2 justify-center gap-8">
-                    <div className={`${styles.about} relative w-max`}>
+                    <div className={`${styles.about} relative w-max justify-self-center`}>
                         <Image
                             src={about}
                             width={495}

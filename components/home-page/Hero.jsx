@@ -4,10 +4,8 @@ import manage from '../../assets/home-page/icons/manage.svg'
 import  learning from '../../assets/home-page/icons/learning.svg'
 import marketing from '../../assets/home-page/icons/marketing.svg'
 import code from '../../assets/home-page/icons/code.svg'
-import pexels from '../../assets/home-page/pexels.png'
-import google from '../../assets/home-page/google.png'
-import upler from '../../assets/home-page/upler.png'
-import udemy from '../../assets/home-page/udemy.png'
+
+import Brands from '../ui/Brands'
 
 const Hero = () => {
     return (
@@ -34,7 +32,7 @@ const Hero = () => {
                 <div className="flex  justify-end col-span-2">
                     
                    <div className="relative">
-                    <div className="absolute -left-32 top-40 z-20 flex flex-col space-y-16 justify-between">
+                    <div className="absolute -left-48 top-40 z-20 flex flex-col space-y-16 justify-between">
                         <div className="flex flex-col items-start space-y-6">
                         <button className="ml-6 py-3 px-6 flex items-center justify-center  font-main font-semibold bg-white text-black shadow-lg rounded-full">
                             <Image
@@ -88,32 +86,7 @@ const Hero = () => {
                </div>
              
             </div>
-            <div className="flex justify-evenly space-x-12 bg-very-light-gray py-4 px-10">
-                    <Image
-                    width={160}
-                    height={60}
-                    src={pexels}
-                    alt="brand"
-                    />
-                    <Image
-                    width={160}
-                    height={53}
-                    src={udemy}
-                    alt="brand"
-                    />
-                    <Image
-                    width={160}
-                    height={40}
-                    src={google}
-                    alt="brand"
-                    />
-                    <Image
-                    width={160}
-                    height={40}
-                    src={upler}
-                    alt="brand"
-                    />
-               </div>
+            <Brands/>
             </div>
         </section>
     )

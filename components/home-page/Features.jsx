@@ -8,7 +8,7 @@ import styles from '../../styles/home-page/features.module.css'
 const Features = () => {
     return (
        <section className="pb-40">
-           <div className="max-w-screen-xl px-10">
+           <div className="max-w-screen-xl mx-auto px-10">
                 <Title
                     title="features"
                     question="What do you gain working with Us?"

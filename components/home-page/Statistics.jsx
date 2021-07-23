@@ -9,7 +9,7 @@ const Statistics = () => {
     return (
        <section className="pb-40 ">
            <div className="py-10" style={{backgroundColor: 'rgba(52, 63, 86, 0.02)'}}>
-           <div className="max-w-screen-xl px-10">
+           <div className="max-w-screen-xl mx-auto px-10">
                 <Title
                     title="Success History"
                     question="Do you know why we are the Best?"
