@@ -9,6 +9,7 @@ import Clients from '../components/home-page/Clients'
 import Contact from '../components/home-page/Contact'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Navbar from '../components/ui/Navbar'
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
         <meta name="description" content="Empower your  Business, Skill, Education and Project with professionals" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
+      <Navbar cta={true}/>
 
       <main className="overflow-hidden">
        <Hero/>

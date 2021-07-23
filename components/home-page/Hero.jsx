@@ -17,7 +17,7 @@ import {
 const Hero = () => {
   return (
     <section className="lg:py-0 py-20 flex justify-center items-center">
-      <div>
+      <div >
         <div className="max-w-screen-xl mx-auto md:px-10 px-2 ">
           <div className="grid lg:grid-cols-3 grid-cols-1 items-center">
             <div className="overflow-hidden">
@@ -147,6 +147,7 @@ const Hero = () => {
         </div>
         <Brands />
       </div>
+      
     </section>
   );
 };
