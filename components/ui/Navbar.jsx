@@ -4,6 +4,8 @@ import "tailwindcss/tailwind.css";
 import styles from "../../styles/ui/navbar.module.css";
 import { Squash as Hamburger } from "hamburger-react";
 import { useState } from "react";
+import { slideDown } from "../../helpers/animation";
+import { motion } from "framer-motion";
 
 const Navbar = ({ light = false, cta = false, navCenter = false }) => {
   const router = useRouter();
@@ -19,7 +21,13 @@ const Navbar = ({ light = false, cta = false, navCenter = false }) => {
   ];
 
   return (
-    <header className="absolute top-0 z-40 w-full py-4">
+    <motion.header
+      initial="hidden"
+      animate="visible"
+      variants={slideDown}
+      custom={0.9}
+      className="absolute top-0 z-40 w-full py-4"
+    >
       <nav
         className={`flex items-center ${
           navCenter ? "justify-center" : "justify-end"
@@ -83,13 +91,15 @@ const Navbar = ({ light = false, cta = false, navCenter = false }) => {
             </li>
           ))}
           <Link href="/signup">
-            <a className="text-sm bg-white rounded-full font-semibold px-6 py-2 text-primary font-secondary">
+            <a
+            onClick={() => setOpen(false)}
+            className="text-sm bg-white rounded-full font-semibold px-6 py-2 text-primary font-secondary">
               Enroll
             </a>
           </Link>
         </ul>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 

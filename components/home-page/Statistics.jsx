@@ -6,8 +6,15 @@ import client from "../../assets/home-page/icons/client.svg";
 import ScrollReveal from "./ui/ScrollReveal";
 import { itemSlideUp, list } from "../../helpers/animation";
 import { motion } from "framer-motion";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
 const Statistics = () => {
+  const [ref, inView] = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+
   return (
     <section className="pb-40 ">
       <div
@@ -29,10 +36,11 @@ const Statistics = () => {
               <h4 className="font-main text-very-dark-blue mb-4">
                 We are trusted by
               </h4>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2" ref={ref}>
                 <Image src={person} width={30} height={30} alt="icon" />
                 <span className="font-main font-semibold text-3xl text-dark-blue">
-                  5K+
+                  <CountUp start={0} duration={2} end={inView ? 5 : 0} />
+                  K+
                 </span>
               </div>
             </motion.div>
@@ -40,10 +48,10 @@ const Statistics = () => {
               <h4 className="font-main text-very-dark-blue mb-4">
                 Project realized
               </h4>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2" ref={ref}>
                 <Image src={bag} width={30} height={30} alt="icon" />
                 <span className="font-main font-semibold text-3xl text-dark-blue">
-                  200+
+                  <CountUp start={0} duration={2} end={inView ? 200 : 0} />+
                 </span>
               </div>
             </motion.div>
@@ -51,10 +59,10 @@ const Statistics = () => {
               <h4 className="font-main text-very-dark-blue mb-4">
                 Happy Clients
               </h4>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2" ref={ref}>
                 <Image src={client} width={30} height={30} alt="icon" />
                 <span className="font-main font-semibold text-3xl text-dark-blue">
-                  600+
+                  <CountUp start={0} duration={2} end={inView ? 600 : 0} />+
                 </span>
               </div>
             </motion.div>
