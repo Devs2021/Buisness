@@ -15,7 +15,7 @@ const Hero = () => {
                     Achieve your goal with professionals or guarantee success
                     </h1>
                     <p className="text-white font-secondary font-light text-md mb-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu vitae sit congue venenatis hac 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu vitae sit congue venenatis hac 
                     </p>
                     <form action="">
                         <div className="relative flex ">
