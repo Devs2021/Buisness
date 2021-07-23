@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../../../styles/ui/ImgCard.module.css";
+import styles from "../../../styles/home-page/ui/ImgCard.module.css";
 import client from "../../../assets/home-page/icons/client.svg";
 import calendar from "../../../assets/home-page/icons/calendar.svg";
 import dollar from "../../../assets/home-page/icons/dollar.svg";

@@ -26,7 +26,11 @@ const Navbar = ({ light = false, cta = false, navCenter = false }) => {
         } max-w-screen-xl mx-auto px-10`}
       >
         <div className="md:hidden absolute right-4 top-4 z-40">
-          <Hamburger toggled={isOpen} toggle={setOpen} color={isOpen ? '#fff' : '#FF5C00'}/>
+          <Hamburger
+            toggled={isOpen}
+            toggle={setOpen}
+            color={isOpen ? "#fff" : "#FF5C00"}
+          />
         </div>
         <ul
           className={`md:flex hidden items-center space-x-4 ${
@@ -37,7 +41,6 @@ const Navbar = ({ light = false, cta = false, navCenter = false }) => {
             <li key={`${name}-${index}}`}>
               <Link href={route}>
                 <a
-                
                   className={`${
                     styles.navLink
                   } relative text-lg cursor-pointer capitalize font-secondary ${
@@ -59,13 +62,15 @@ const Navbar = ({ light = false, cta = false, navCenter = false }) => {
           )}
         </ul>
         <ul
-          className={`${isOpen ? 'max-h-screen' : 'max-h-0'} transition-all duration-300 overflow-hidden flex md:hidden flex-col absolute top-0 right-0 w-screen bg-primary items-center text-white z-30 space-y-6 justify-center  h-screen`}
+          className={`${
+            isOpen ? "max-h-screen" : "max-h-0"
+          } transition-all duration-300 overflow-hidden flex md:hidden flex-col absolute top-0 right-0 w-screen bg-primary items-center text-white z-30 space-y-6 justify-center  h-screen`}
         >
           {routes.map(({ name, route }, index) => (
             <li key={`${name}-${index}}`}>
               <Link href={route}>
                 <a
-                onClick={() => setOpen(false)}
+                  onClick={() => setOpen(false)}
                   className={`${
                     styles.navLinkMobile
                   } relative text-lg cursor-pointer capitalize font-secondary ${
@@ -77,11 +82,11 @@ const Navbar = ({ light = false, cta = false, navCenter = false }) => {
               </Link>
             </li>
           ))}
-            <Link href="/signup">
-              <a className="text-sm bg-white rounded-full font-semibold px-6 py-2 text-primary font-secondary">
-                Enroll
-              </a>
-            </Link>
+          <Link href="/signup">
+            <a className="text-sm bg-white rounded-full font-semibold px-6 py-2 text-primary font-secondary">
+              Enroll
+            </a>
+          </Link>
         </ul>
       </nav>
     </header>

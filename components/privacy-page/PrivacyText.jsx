@@ -5,7 +5,6 @@ const PrivacyText = () => {
     <section className="py-20">
       <div className="max-w-screen xl-mx-auto md:px-10 px-4">
         <h2 className="font-main text-very-dark-blue font-semibold text-2xl">
-          
           PRIVACY POLICY
           <span className="text-gray-300 ml-4 text-md">
             Effective date: 2021-07-23

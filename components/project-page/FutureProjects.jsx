@@ -2,7 +2,6 @@ import Image from "next/image";
 import project5 from "../../assets/project-page/project5.jpg";
 import project6 from "../../assets/project-page/project6.jpg";
 import {
-  slideDown,
   slideToLeft,
   slideToRight,
   slideUp,
@@ -13,17 +12,18 @@ const FutureProjects = () => {
   return (
     <section className="pb-36">
       <div className="max-w-screen-xl mx-auto md:px-10 px-4">
-      <ScrollReveal variants={slideUp} className="max-w-screen-md mx-auto  mb-6 text-center">
-            <h3 className="font-main font-semibold text-2xl mb-4">
-              Up Coming Projects
-            </h3>
-        
-          
-            <p className="font-secondary font-light text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu
-              vitae sit congue venenatis hac Arcu vitae sit congue venenatis hac
-            </p>
-          
+        <ScrollReveal
+          variants={slideUp}
+          className="max-w-screen-md mx-auto  mb-6 text-center"
+        >
+          <h3 className="font-main font-semibold text-2xl mb-4">
+            Up Coming Projects
+          </h3>
+
+          <p className="font-secondary font-light text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu vitae
+            sit congue venenatis hac Arcu vitae sit congue venenatis hac
+          </p>
         </ScrollReveal>
         <div className="grid md:grid-cols-2 grid-cols-1 overflow-hidden gap-12">
           <ScrollReveal variants={slideToRight}>
