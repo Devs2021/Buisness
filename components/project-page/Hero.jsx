@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import heroImg from "../../assets/project-page/hero-img.png";
-import { slideDown, slideToLeft, slideUp } from "../../helpers/animation";
+import { fadeIn, slideDown, slideToLeft, slideUp } from "../../helpers/animation";
 import Brands from "../ui/Brands";
 import chat from '../../assets/project-page/chat.png'
 
@@ -64,9 +64,15 @@ const Hero = () => {
               <Image src={heroImg} width={500} height={665} alt="hero img" />
             </motion.div>
           </div>
-          <div className="absolute bottom-0">
+
+          <motion.div
+             initial="hidden"
+             animate="visible"
+             variants={fadeIn}
+             custom={0.3}
+          className="absolute md:-bottom-10  -bottom-16">
           <Image src={chat} width={190} height={105} alt="chat img" />
-          </div>
+          </motion.div>
         </div>
       </div>
       <Brands />

@@ -13,19 +13,18 @@ const FutureProjects = () => {
   return (
     <section className="pb-36">
       <div className="max-w-screen-xl mx-auto md:px-10 px-4">
-        <div className="max-w-screen-md mx-auto overflow-hidden mb-6 text-center">
-          <ScrollReveal variants={slideDown}>
+      <ScrollReveal variants={slideUp} className="max-w-screen-md mx-auto  mb-6 text-center">
             <h3 className="font-main font-semibold text-2xl mb-4">
               Up Coming Projects
             </h3>
-          </ScrollReveal>
-          <ScrollReveal variants={slideUp}>
+        
+          
             <p className="font-secondary font-light text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu
               vitae sit congue venenatis hac Arcu vitae sit congue venenatis hac
             </p>
-          </ScrollReveal>
-        </div>
+          
+        </ScrollReveal>
         <div className="grid md:grid-cols-2 grid-cols-1 overflow-hidden gap-12">
           <ScrollReveal variants={slideToRight}>
             <Image src={project5} width={600} height={590} alt="card img" />

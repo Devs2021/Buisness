@@ -13,7 +13,7 @@ import Navbar from '../components/ui/Navbar'
 
 export default function Home() {
   return (
-    <div >
+    <div>
       <Head>
         <title>Home</title>
         <meta name="description" content="Empower your  Business, Skill, Education and Project with professionals" />

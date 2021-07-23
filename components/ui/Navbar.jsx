@@ -19,7 +19,7 @@ const Navbar = ({ light = false, cta = false, navCenter = false }) => {
   ];
 
   return (
-    <header className="absolute top-0 w-screen py-4">
+    <header className="absolute top-0 z-40 w-full py-4">
       <nav
         className={`flex items-center ${
           navCenter ? "justify-center" : "justify-end"
