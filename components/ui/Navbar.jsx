@@ -51,11 +51,11 @@ const Navbar = ({ light = false, cta = false, navCenter = false }) => {
           ))}
 
           {cta && (
-            <li>
-              <button className="text-sm bg-primary rounded-full font-semibold px-6 py-2 text-white font-secondary">
+            <Link href="/signup">
+              <a className="text-sm bg-primary rounded-full font-semibold px-6 py-2 text-white font-secondary">
                 Enroll
-              </button>
-            </li>
+              </a>
+            </Link>
           )}
         </ul>
         <ul
@@ -77,14 +77,11 @@ const Navbar = ({ light = false, cta = false, navCenter = false }) => {
               </Link>
             </li>
           ))}
-
-          {cta && (
-            <li>
-              <button className="text-sm bg-white rounded-full font-semibold px-6 py-2 text-primary font-secondary">
+            <Link href="/signup">
+              <a className="text-sm bg-white rounded-full font-semibold px-6 py-2 text-primary font-secondary">
                 Enroll
-              </button>
-            </li>
-          )}
+              </a>
+            </Link>
         </ul>
       </nav>
     </header>

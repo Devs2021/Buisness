@@ -13,11 +13,12 @@ import {
   slideToLeft,
   slideUp,
 } from "../../helpers/animation";
+import Link from "next/link";
 
 const Hero = () => {
   return (
     <section className="lg:py-0 py-20 flex justify-center items-center">
-      <div >
+      <div>
         <div className="max-w-screen-xl mx-auto md:px-10 px-2 ">
           <div className="grid lg:grid-cols-3 grid-cols-1 items-center">
             <div className="overflow-hidden">
@@ -51,11 +52,15 @@ const Hero = () => {
                   custom={0.9}
                   className="flex space-x-4"
                 >
-                  <button className="py-2 px-6 font-main font-semibold bg-primary text-white rounded-full">
-                    Enroll Now
+                  <button className="py-2  px-6 font-main font-semibold bg-primary text-white rounded-full">
+                    <Link href="/signup">
+                      <a>Enroll Now</a>
+                    </Link>
                   </button>
-                  <button className="py-2 px-6 font-main font-semibold border border-primary  text-black rounded-full">
-                    Contact Us
+                  <button className="py-2 px-6 font-main hover:text-primary font-semibold  border border-primary  text-black rounded-full">
+                    <Link href="/contact">
+                      <a>Contact Us</a>
+                    </Link>
                   </button>
                 </motion.div>
               </div>
@@ -135,11 +140,15 @@ const Hero = () => {
                 custom={0.9}
                 className="flex space-x-4"
               >
-                <button className="py-2 px-6 font-main font-semibold bg-primary text-white rounded-full">
-                  Enroll Now
+                <button className="py-2  px-6 font-main font-semibold bg-primary text-white rounded-full">
+                  <Link href="/signup">
+                    <a>Enroll Now</a>
+                  </Link>
                 </button>
-                <button className="py-2 px-6 font-main font-semibold border border-primary  text-black rounded-full">
-                  Contact Us
+                <button className="py-2 px-6 font-main hover:text-primary font-semibold  border border-primary  text-black rounded-full">
+                  <Link href="/contact">
+                    <a>Contact Us</a>
+                  </Link>
                 </button>
               </motion.div>
             </div>
@@ -147,7 +156,6 @@ const Hero = () => {
         </div>
         <Brands />
       </div>
-      
     </section>
   );
 };
