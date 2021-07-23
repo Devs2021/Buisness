@@ -3,6 +3,10 @@ import Image from 'next/image'
 import person from '../../assets/home-page/icons/person.svg'
 import bag from '../../assets/home-page/icons/bag.svg';
 import client from '../../assets/home-page/icons/client.svg'
+import ScrollReveal from "./ui/ScrollReveal";
+import { itemSlideUp, list } from "../../helpers/animation";
+import { motion } from "framer-motion";
+
 
 
 const Statistics = () => {
@@ -16,8 +20,10 @@ const Statistics = () => {
                     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci fusce blandit facilisis enim potenti vulputate quisque. Nunc suspendisse urna lobortis quisque pellentesque tempor, pellentesque tortor. Est, vitae volutpat ullamcorper enim."
                 />
 
-                <div className="flex items-center sm:flex-row sm:space-y-0 flex-col space-y-6 justify-center sm:space-x-6">
-                    <div>
+                <ScrollReveal 
+                variants={list}
+                className="flex items-center sm:flex-row sm:space-y-0 flex-col space-y-6 justify-center sm:space-x-6">
+                    <motion.div variants={itemSlideUp}>
                         <h4 className="font-main text-very-dark-blue mb-4">We are trusted by</h4>
                         <div className="flex items-center space-x-2">
                             <Image
@@ -28,8 +34,8 @@ const Statistics = () => {
                             />
                             <span className="font-main font-semibold text-3xl text-dark-blue">5K+</span>
                         </div>
-                    </div>
-                    <div>
+                    </motion.div>
+                    <motion.div variants={itemSlideUp}>
                         <h4 className="font-main text-very-dark-blue mb-4">Project realized</h4>
                         <div className="flex items-center space-x-2">
                             <Image
@@ -40,8 +46,8 @@ const Statistics = () => {
                             />
                             <span className="font-main font-semibold text-3xl text-dark-blue">200+</span>
                         </div>
-                    </div>
-                    <div>
+                    </motion.div>
+                    <motion.div variants={itemSlideUp}>
                         <h4 className="font-main text-very-dark-blue mb-4">Happy Clients</h4>
                         <div className="flex items-center space-x-2">
                             <Image
@@ -52,8 +58,8 @@ const Statistics = () => {
                             />
                             <span className="font-main font-semibold text-3xl text-dark-blue">600+</span>
                         </div>
-                    </div>
-                </div>
+                    </motion.div>
+                </ScrollReveal>
            </div>
         </div>
 

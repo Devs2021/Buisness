@@ -4,11 +4,14 @@ import client from '../../../assets/home-page/icons/client.svg'
 import calendar from '../../../assets/home-page/icons/calendar.svg'
 import dollar from '../../../assets/home-page/icons/dollar.svg'
 import time from '../../../assets/home-page/icons/time.svg'
+import { slideUp } from '../../../helpers/animation'
+
+import ScrollReveal from './ScrollReveal'
 
 
-const ImgCard = ({img}) => {
+const ImgCard = ({img, custom=0.1}) => {
     return (
-        <div className="bg-white rounded-md shadow-md p-4 shadow-md">
+        <ScrollReveal custom={custom} variants={slideUp} className="bg-white rounded-md shadow-md p-4 shadow-md">
             <div className="rounded-md relative" style={{maxHeight:340}}>
                 <Image
                     src={img}
@@ -68,7 +71,7 @@ const ImgCard = ({img}) => {
                 <h3 className="text-md font-secondary font-semibold my-4">Lorem ipsum dolor sit amet</h3>
                 <button className="rounded-full bg-primary text-white fontmain capitalize px-8 py-2">more details</button>
             </div>
-        </div>
+        </ScrollReveal>
     )
 }
 

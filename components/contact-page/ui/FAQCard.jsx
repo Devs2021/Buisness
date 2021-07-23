@@ -1,13 +1,15 @@
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
+import { slideUp } from '../../../helpers/animation';
+import ScrollReveal from '../../home-page/ui/ScrollReveal';
 
 const FAQ = ({question, answer}) => {
 
     const [isOpen, setOpen] = useState(false);
 
     return (
-        <div className="max-w-screen-lg mx-auto bg-gray-200 p-4 mb-6 rounded-sm">
+        <ScrollReveal variants={slideUp} className="max-w-screen-lg mx-auto bg-gray-200 p-4 mb-6 rounded-sm">
             <div className="flex items-center justify-between">
                 <p className="font-secondary font-light text-md">
                     {question}
@@ -25,7 +27,7 @@ const FAQ = ({question, answer}) => {
                     {answer}
                 </p>
             </div>
-        </div>
+        </ScrollReveal>
     )
 }
 

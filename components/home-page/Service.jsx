@@ -2,6 +2,8 @@ import React from 'react'
 import Title from './ui/Title'
 import styles from '../../styles/home-page/service.module.css'
 import SilckSlider from './ui/Slider'
+import ScrollReveal from './ui/ScrollReveal'
+import { slideUp } from '../../helpers/animation'
 
 
 const Service = () => {
@@ -15,6 +17,7 @@ const Service = () => {
                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat interdum dolor enim justo."
                    
                    />
+                   <ScrollReveal variants={slideUp} custom={0.6}>
                    <div className="rounded-md border-8" style={{borderColor: "#fee9c1"}}>
                        <div className={`flex w-max mx-auto space-x-4 items-center justify-center ${styles.polygon} mb-6`}>
                            <h4 className="font-secondary font-semibold text-very-dark-blue underline text-md capitalize">
@@ -59,6 +62,7 @@ const Service = () => {
                            </SilckSlider>
                        </div>
                    </div>
+                   </ScrollReveal>
                </div>
            </div>
        </section>

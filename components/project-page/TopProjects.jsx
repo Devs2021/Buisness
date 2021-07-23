@@ -7,13 +7,16 @@ import project4 from '../../assets/global/project4.jpg'
 import styles from '../../styles/project-page/project.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import ScrollReveal from '../home-page/ui/ScrollReveal'
+import { fadeIn, slideUp } from '../../helpers/animation'
+
 
 const TopProjects = () => {
     return (
        <section className="py-36">
            <div className="max-w-screen-xl mx-auto md:px-10 px-4">
                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
-                   <div className="self-center">
+                   <ScrollReveal variants={slideUp} className="self-center">
                        <h3 className="font-secondary font-semibold text-very-dark-blue text-2xl mb-4">
                        Our Top and awarded Projects lately 
                        </h3>
@@ -23,15 +26,16 @@ const TopProjects = () => {
                        <button className="rounded-full bg-primary text-white p-4 flex items-center justify-center">
                           <span className="w-4 h-4 inline-block"> <FontAwesomeIcon icon={faArrowRight}/></span> 
                        </button>
-                   </div>
-                   <ImgCard img={project1}/>
-                   <ImgCard img={project2}/>
-                   <ImgCard img={project3}/>
-                   <ImgCard img={project4}/>
-                   <ImgCard img={project3}/>
+                   </ScrollReveal>
+                   
+                   <ImgCard custom={0.3}  img={project1}/>
+                   <ImgCard custom={0.6} img={project2}/>
+                   <ImgCard custom={0.3} img={project3}/>
+                   <ImgCard custom={0.6} img={project4}/>
+                   <ImgCard custom={0.9} img={project3}/>
                </div>
            </div>
-           <div className={`mt-20 ${styles.banner}`}></div>
+           <ScrollReveal variants={fadeIn} className={`mt-20 ${styles.banner}`}></ScrollReveal>
        </section>
     )
 }

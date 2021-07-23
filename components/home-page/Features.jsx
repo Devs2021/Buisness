@@ -4,6 +4,10 @@ import work1 from '../../assets/home-page/work1.png';
 import work2 from '../../assets/home-page/work2.png';
 import work3 from '../../assets/home-page/work3.png';
 import styles from '../../styles/home-page/features.module.css'
+import { itemSlideUp, list, slideUp } from '../../helpers/animation';
+import { motion } from 'framer-motion';
+import ScrollReveal from './ui/ScrollReveal';
+
 
 const Features = () => {
     return (
@@ -14,9 +18,10 @@ const Features = () => {
                     question="What do you gain working with Us?"
                     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci fusce blandit facilisis enim potenti vulputate quisque. Nunc suspendisse urna lobortis quisque pellentesque tempor, pellentesque tortor. Est, vitae volutpat ullamcorper enim."
                 />
-
+                
                 <div className="grid lg:grid-cols-3 grid-cols-1  gap-12 items-start justify-center ">
-                    <div className={`bg-white p-6 rounded-md cursor-pointer ${styles.box}`}>
+                <ScrollReveal variants={slideUp} custom={0.3} >
+                    <div  className={`bg-white p-6 rounded-md cursor-pointer ${styles.box}`}>
                         <div className="text-center">
                         <Image
                             src={work1}
@@ -32,7 +37,9 @@ const Features = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci fusce blandit facilisis enim potenti vulputate quisque. Nunc suspendisse urna lobortis quisque pellentesque tempor, pellentesque tortor. Est, vitae volutpat ullamcorper enim.
                         </p>
                     </div>
-                    <div className={`bg-white mt-16 shadow-lg cursor-pointer rounded-md p-6 ${styles.box}`}>
+                </ScrollReveal>
+                <ScrollReveal variants={slideUp} custom={0.5} >
+                    <div  className={`bg-white mt-16 shadow-lg cursor-pointer rounded-md p-6 ${styles.box}`}>
                         <div className="text-center">
                         <Image
                             src={work2}
@@ -48,7 +55,9 @@ const Features = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci fusce blandit facilisis enim potenti vulputate quisque. Nunc suspendisse urna lobortis quisque pellentesque tempor, pellentesque tortor. Est, vitae volutpat ullamcorper enim.
                         </p>
                     </div>
-                    <div className={`bg-white mt-20 p-6 rounded-md cursor-pointer ${styles.box}`}>
+                </ScrollReveal>
+                <ScrollReveal variants={slideUp} custom={0.9}>
+                    <div  className={`bg-white mt-20 p-6 rounded-md cursor-pointer ${styles.box}`}>
                         <div className="text-center">
                         <Image
                             src={work3}
@@ -64,7 +73,9 @@ const Features = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci fusce blandit facilisis enim potenti vulputate quisque. Nunc suspendisse urna lobortis quisque pellentesque tempor, pellentesque tortor. Est, vitae volutpat ullamcorper enim.
                         </p>
                     </div>
+                </ScrollReveal>
                 </div>
+                
            </div>
        </section>
     )

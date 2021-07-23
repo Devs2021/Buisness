@@ -3,33 +3,50 @@ import styles from '../../styles/signup-page/hero.module.css'
 import img3d1 from '../../assets/signup-page/3d1.png'
 import img3d2 from '../../assets/signup-page/3d2.png'
 import Image from 'next/image'
+import { slideDown, slideToLeft, slideToRight } from '../../helpers/animation'
+import { motion } from 'framer-motion'
+
 
 const Hero = () => {
     return (
-        <section className={`lg:py-44 py-20 grid grid-cols-4 ${styles.hero}`} >
+        <section className={`lg:py-32 py-20 grid grid-cols-4 ${styles.hero}`} >
             
-             <div>
+            <motion.div
+             initial="hidden"
+             animate="visible"
+             variants={slideToRight}
+             custom={0.6}>
                 <Image
                     src={img3d1}
                     width={270}
                     height={310}
                     alt="Sign up"
                 />
-            </div>
-            <div className=" col-span-2 self-end text-center ">
+            </motion.div>
+            <motion.div
+             initial="hidden"
+             animate="visible"
+             variants={slideDown}
+             custom={0.3}
+            className=" col-span-2 self-end text-center ">
                 <h1 className="font-main font-semibold lg:text-7xl text-4xl capitalize text-white">
                     Sign Up
                 </h1>
-            </div>
+            </motion.div>
             
-            <div className="justify-self-end">
+            <motion.div
+             initial="hidden"
+             animate="visible"
+             variants={slideToLeft}
+             custom={0.3}
+             className="justify-self-end">
                 <Image
                     src={img3d2}
                     width={270}
                     height={310}
                     alt="Sign up"
                 />
-            </div>
+            </motion.div>
             
         </section>
     )
