@@ -7,6 +7,8 @@ import Statistics from '../components/home-page/Statistics'
 import Projects from '../components/home-page/Projects'
 import Clients from '../components/home-page/Clients'
 import Contact from '../components/home-page/Contact'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
   return (
@@ -17,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="overflow-hidden">
        <Hero/>
        <Service/>
        <Features/>

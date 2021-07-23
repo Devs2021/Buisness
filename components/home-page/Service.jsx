@@ -1,13 +1,14 @@
 import React from 'react'
 import Title from './ui/Title'
 import styles from '../../styles/home-page/service.module.css'
+import SilckSlider from './ui/Slider'
 
 
 const Service = () => {
     return (
-       <section className="py-40">
+       <section className="py-28">
            <div>
-               <div className="max-w-screen-xl mx-auto px-10">
+               <div className="max-w-screen-xl mx-auto md:px-10 px-2">
                    <Title
                         title="Our Services"
                         question="What are the best offers we have for you?"
@@ -26,34 +27,36 @@ const Service = () => {
                                Others
                            </h4>
                        </div>
-                       <div className="grid grid-cols-3 gap-8 px-6 py-12 justify-center">
-                           <div className="text-center">
+                       <div className=" px-6 py-12 ">
+                           <SilckSlider arrows={true}>
+                           <div className="text-center px-2">
                                <h3 className="text-2xl font-secondary font-semibold text-very-dark-blue mb-4">Seo</h3>
-                               <p className="text-gray-600 text-left font-secondary text-sm mb-6">
+                               <p className="text-gray-600 lg:text-left text-center font-secondary text-sm mb-6">
                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque, augue morbi ullamcorper enim urna nam pharetra. Euismod vivamus sit bibendum accumsan, non at. Vitae vitae leo imperdiet tristique fermentum.
                                </p>
                                <button className="font-secondary font-semibold text-white px-6 py-1 text-md bg-primary rounded-full">
                                     Learn more
                                </button>
                            </div>
-                           <div className="text-center">
+                           <div className="text-center px-2">
                                <h3 className="text-2xl font-secondary font-semibold text-very-dark-blue mb-4">Email marketing</h3>
-                               <p className="text-gray-600 text-left font-secondary text-sm mb-6">
+                               <p className="text-gray-600 lg:text-left text-center font-secondary text-sm mb-6">
                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque, augue morbi ullamcorper enim urna nam pharetra. Euismod vivamus sit bibendum accumsan, non at. Vitae vitae leo imperdiet tristique fermentum.
                                </p>
                                <button className="font-secondary font-semibold text-white px-6 py-1 text-md bg-primary rounded-full">
                                     Learn more
                                </button>
                            </div>
-                           <div className="text-center">
+                           <div className="text-center px-2">
                                <h3 className="text-2xl font-secondary font-semibold text-very-dark-blue mb-4">Paid Media Advertising</h3>
-                               <p className="text-gray-600 text-left font-secondary text-sm mb-6">
+                               <p className="text-gray-600 lg:text-left text-center font-secondary text-sm mb-6">
                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra neque, augue morbi ullamcorper enim urna nam pharetra. Euismod vivamus sit bibendum accumsan, non at. Vitae vitae leo imperdiet tristique fermentum.
                                </p>
                                <button className="font-secondary font-semibold text-white px-6 py-1 text-md bg-primary rounded-full">
                                     Learn more
                                </button>
                            </div>
+                           </SilckSlider>
                        </div>
                    </div>
                </div>

@@ -5,7 +5,7 @@ import project6 from '../../assets/project-page/project6.jpg'
 const FutureProjects = () => {
     return (
         <section className="pb-36">
-            <div className="max-w-screen-xl mx-auto px-10">
+            <div className="max-w-screen-xl mx-auto md:px-10 px-4">
                 <div className="max-w-screen-md mx-auto mb-6 text-center">
                     <h3 className="font-main font-semibold text-2xl mb-4">
                         Up Coming Projects
@@ -14,7 +14,7 @@ const FutureProjects = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu vitae sit congue venenatis hac Arcu vitae sit congue venenatis hac 
                     </p>    
                 </div>
-                <div className="grid grid-cols-2 gap-12">
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-12">
                     <div >
                     <Image
                     src={project5}
@@ -32,7 +32,7 @@ const FutureProjects = () => {
                         </p>  
                     </div>  
                     
-                    <div className="self-center">
+                    <div className="self-center md:order-3 order-4">
                         <h4 className="font-secondary text-center font-semibold text-2xl mb-4">
                             Project Title
                         </h4>   
@@ -40,12 +40,14 @@ const FutureProjects = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices aliquam sit vestibulum, duis nunc, velit. Bibendum egestas eleifend lacus proin ultrices ut tristique. Vitae phasellus mauris lectus pharetra dolor, hendrerit dictum. Velit suscipit habitant laoreet aliquam viverra bibendum neque. Tortor scelerisque id ut egestas ac blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices aliquam sit vestibulum, duis nunc, velit. Bibendum egestas eleifend lacus proin ultrices ut tristique. Vitae phasellus mauris lectus pharetra dolor, hendrerit dictum. Velit suscipit habitant laoreet aliquam viverra bibendum neque. Tortor scelerisque id ut egestas ac blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices aliquam sit vestibulum, duis nunc, velit. Bibendum egestas eleifend lacus proin ultrices ut tristique. Vitae phasellus mauris lectus pharetra dolor, hendrerit dictum. Velit suscipit habitant laoreet aliquam viverra bibendum neque. Tortor scelerisque id ut egestas ac blandit.
                         </p>  
                     </div>
+                    <div className="md:order-4 order-3">
                     <Image
                     src={project6}
                     width={600}
                     height={590}
                     alt="card img"
                 />   
+                    </div>
                 </div>    
             </div>    
             

@@ -9,14 +9,14 @@ const Statistics = () => {
     return (
        <section className="pb-40 ">
            <div className="py-10" style={{backgroundColor: 'rgba(52, 63, 86, 0.02)'}}>
-           <div className="max-w-screen-xl mx-auto px-10">
+           <div className="max-w-screen-xl mx-auto md:px-10 px-2">
                 <Title
                     title="Success History"
                     question="Do you know why we are the Best?"
                     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci fusce blandit facilisis enim potenti vulputate quisque. Nunc suspendisse urna lobortis quisque pellentesque tempor, pellentesque tortor. Est, vitae volutpat ullamcorper enim."
                 />
 
-                <div className="flex items-center justify-center space-x-6">
+                <div className="flex items-center sm:flex-row sm:space-y-0 flex-col space-y-6 justify-center sm:space-x-6">
                     <div>
                         <h4 className="font-main text-very-dark-blue mb-4">We are trusted by</h4>
                         <div className="flex items-center space-x-2">

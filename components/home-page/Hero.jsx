@@ -9,31 +9,33 @@ import Brands from '../ui/Brands'
 
 const Hero = () => {
     return (
-        <section className="flex justify-center items-center">
+        <section className="lg:py-0 py-20 flex justify-center items-center">
             <div>
-            <div className="max-w-screen-xl mx-auto px-10 ">
-               <div className="grid grid-cols-3 items-center">
-               <div>
-                    <h1 className="text-4xl text-very-dark-blue font-main font-semibold mb-6">
-                    Empower your <span className="text-primary">Buisness</span>, Skill, Education and Project with <span className="text-primary">professionals</span>
-                    </h1>
-                    <p className="text-black font-secondary text-md mb-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu vitae sit congue venenatis hac viverra imperdiet viverra volutpat. 
-                    </p>
-                    <div className="flex space-x-4">
-                    <button className="py-2 px-6 font-main font-semibold bg-primary text-white rounded-full">
-                        Enroll Now
-                    </button>
-                    <button className="py-2 px-6 font-main font-semibold border border-primary  text-black rounded-full">
-                        Contact Us
-                    </button>
+            <div className="max-w-screen-xl mx-auto md:px-10 px-2 ">
+               <div className="grid lg:grid-cols-3 grid-cols-1 items-center">
+                    <div>
+                        <h1 className="text-4xl text-very-dark-blue font-main font-semibold mb-6">
+                        Empower your <span className="text-primary">Buisness</span>, Skill, Education and Project with <span className="text-primary">professionals</span>
+                        </h1>
+                        <div className="md:block hidden">
+                            <p className="text-black font-secondary text-md mb-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu vitae sit congue venenatis hac viverra imperdiet viverra volutpat. 
+                            </p>
+                            <div className="flex space-x-4">
+                                <button className="py-2 px-6 font-main font-semibold bg-primary text-white rounded-full">
+                                    Enroll Now
+                                </button>
+                                <button className="py-2 px-6 font-main font-semibold border border-primary  text-black rounded-full">
+                                    Contact Us
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div className="flex  justify-end col-span-2">
+                <div className="flex justify-end md:col-span-2 md:mb-0 mb-10">
                     
-                   <div className="relative">
-                    <div className="absolute -left-48 top-40 z-20 flex flex-col space-y-16 justify-between">
-                        <div className="flex flex-col items-start space-y-6">
+                   <div className="flex relative">
+                    <div className="md:absolute -left-48 top-40 z-20 flex flex-col md:space-y-16 space-y-4 md:justify-between justify-center">
+                        <div className="flex flex-col items-start md:space-y-6 space-y-2">
                         <button className="ml-6 py-3 px-6 flex items-center justify-center  font-main font-semibold bg-white text-black shadow-lg rounded-full">
                             <Image
                                 src={manage}
@@ -53,7 +55,7 @@ const Hero = () => {
                             <span className="ml-4">Learning</span>
                         </button>
                         </div>
-                        <div  className="flex flex-col items-start space-y-6">
+                        <div  className="flex flex-col items-start md:space-y-6 space-y-2">
                         <button className="ml-6 py-3 px-6 flex items-center justify-center font-main font-semibold bg-white text-black shadow-lg rounded-full">
                         <Image
                                 src={marketing}
@@ -81,8 +83,20 @@ const Hero = () => {
                     alt="hero img"
                     />
                    </div>
-
                 </div>
+                <div className=" md:hidden mb-10">
+                            <p className="text-black font-secondary text-md mb-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu vitae sit congue venenatis hac viverra imperdiet viverra volutpat. 
+                            </p>
+                            <div className="flex space-x-4">
+                                <button className="py-2 px-6 font-main font-semibold bg-primary text-white rounded-full">
+                                    Enroll Now
+                                </button>
+                                <button className="py-2 px-6 font-main font-semibold border border-primary  text-black rounded-full">
+                                    Contact Us
+                                </button>
+                            </div>
+                        </div>
                </div>
              
             </div>

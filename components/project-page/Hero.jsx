@@ -8,8 +8,8 @@ const Hero = () => {
     return (
         <section className=" ">
             <div className="bg-dark-blue py-20">
-            <div className="max-w-screen-xl px-10 mx-auto">
-            <div className="grid grid-cols-2 items-center">
+            <div className="max-w-screen-xl md:px-10 px-4 mx-auto">
+            <div className="grid md:grid-cols-2 grid-cols-1 items-center">
                <div>
                     <h1 className="text-4xl text-white font-main font-semibold mb-6">
                     Achieve your goal with professionals or guarantee success
@@ -19,7 +19,7 @@ const Hero = () => {
                     </p>
                     <form action="">
                         <div className="relative flex ">
-                            <input type="text" className="bg-white w-96 rounded-sm py-2" />
+                            <input type="text" className="bg-white lg:w-96 md:w-56 w-full rounded-sm py-2" />
                             <button className="rounded-sm py-2 px-4 bg-primary text-sm text-white">
                             <span className="w-6 h-6 inline-block"> <FontAwesomeIcon icon={faSearch}/></span>
                             </button>

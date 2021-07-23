@@ -3,7 +3,7 @@ import  FAQCard from './ui/FAQCard';
 const FAQ = () => {
     return (
         <section className="py-20">
-            <div className="text-center mb-16 max-w-screen-md mx-auto">
+            <div className="text-center mb-16 max-w-screen-md px-10 mx-auto">
                     <h2 className="font-main text-3xl font-semibold mb-6 text-dark-blue">
                     FAQ
                     </h2>
@@ -11,6 +11,9 @@ const FAQ = () => {
                     Qet all type of anwsers to any question you need to know or solution to any challenge you have been facing. Do well to consult them bellow.
                     </p>
                 </div>
+                <div className="max-w-screen xl md:px-10 px-4 mx-auto">
+
+                
             
             <FAQCard
                     question="Lorem ipsum dolor sit amet, consectetur adipiscing elit.?"
@@ -44,6 +47,7 @@ const FAQ = () => {
                     lectus pharetra dolor, hendrerit dictum
                     Orci fusce blandit  facilisis enim"
                 />
+                </div>
         
         </section>
     )

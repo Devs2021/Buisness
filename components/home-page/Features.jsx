@@ -8,14 +8,14 @@ import styles from '../../styles/home-page/features.module.css'
 const Features = () => {
     return (
        <section className="pb-40">
-           <div className="max-w-screen-xl mx-auto px-10">
+           <div className="max-w-screen-xl mx-auto md:px-10 px-2">
                 <Title
                     title="features"
                     question="What do you gain working with Us?"
                     text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci fusce blandit facilisis enim potenti vulputate quisque. Nunc suspendisse urna lobortis quisque pellentesque tempor, pellentesque tortor. Est, vitae volutpat ullamcorper enim."
                 />
 
-                <div className="grid grid-cols-3  gap-12 items-start justify-center ">
+                <div className="grid lg:grid-cols-3 grid-cols-1  gap-12 items-start justify-center ">
                     <div className={`bg-white p-6 rounded-md cursor-pointer ${styles.box}`}>
                         <div className="text-center">
                         <Image

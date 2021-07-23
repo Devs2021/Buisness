@@ -8,16 +8,17 @@ import Subscribe from '../home-page/ui/Subscribe'
 const Hero = () => {
     return (
         <section>
-            <div className=" bg-dark-blue h-96">
-                
-            </div>
-            <div className=" mx-auto w-max   transform -translate-y-1/2">
-                    <Image
+            <div className=" bg-dark-blue md:h-96 h-56"/>
+            <div className=" mx-auto px-4 flex justify-center transform flex -translate-y-1/2">
+                  
+                   <Image
                         src={contactImg}
-                        width={880}
+                        width={680}
                         height={390}
+                        
                         alt="contact img"
                     />
+                   
                 </div>
             <div className="pb-20 text-center max-w-screen-lg mx-auto">
                 <h2 className="font-secondary font-semibold text-3xl mb-6">
@@ -27,7 +28,7 @@ const Hero = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci fusce blandit  facilisis enim potenti vulputate quisque. Nunc suspendisse urna lobortis quisque pellentesque tempor, pellentesque 
                 </p>
             </div>
-            <div className="max-w-screen-xl px-10 mx-auto">
+            <div className="max-w-screen-xl md:px-10 px-4 mx-auto">
               <div className="mb-10">
               <ContactForm/>
               </div>

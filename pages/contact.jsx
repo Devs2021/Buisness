@@ -12,7 +12,7 @@ const contact = () => {
         <meta name="description" content="Empower your  Business, Skill, Education and Project with professionals" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <main>
+        <main className="overflow-hidden">
             <Hero/>
             <FAQ/>
          </main>

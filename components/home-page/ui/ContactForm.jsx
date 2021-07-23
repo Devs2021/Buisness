@@ -1,9 +1,30 @@
 import Image from 'next/image'
+import { useEffect, useState } from 'react';
 import formImg from '../../../assets/home-page/form-img.jpg'
 
 const ContactForm = () => {
+    const [width, setWidth] = useState(250);
+    const [height, setheight] = useState(360);
+
+    useEffect(() => {
+        if(typeof window !== undefined){
+            if (window.innerWidth <= 768){
+                setWidth(160);
+                setheight(190)
+            }
+        }
+    },[])
+
     return (
-        <div className="relative py-8 px-10 rounded-md max-w-screen-md mx-auto" style={{backgroundColor: '#eee'}}>
+        <div className="relative lg:mt-0 mt-32 py-8 md:px-10 px-2 rounded-md max-w-screen-md mx-auto" style={{backgroundColor: '#eee'}}>
+             <div className="lg:absolute lg:top-1/2 xl:-right-40 lg:-right-20 rounded-md transform text-center -translate-y-1/2">
+                <Image
+                    src={formImg}
+                    width={width}
+                    height={height}
+                    alt="form image"
+                />
+            </div>
             <h3 className="font-secondary font-semibold mb-6">Contact Form</h3>
             <form action="" className="max-w-lg">
                 <div className="mb-4">
@@ -21,14 +42,7 @@ const ContactForm = () => {
                 </div>
                 <button className="rounded-full font-main font-semibold bg-white px-6 py-2">Send</button>
             </form>
-            <div className="absolute top-1/2 -right-40 rounded-md transform  -translate-y-1/2">
-                <Image
-                    src={formImg}
-                    width={250}
-                    height={360}
-                    alt="form image"
-                />
-            </div>
+           
         </div>
     )
 }
