@@ -2,7 +2,7 @@ import Head from "next/head"
 import Hero from "../components/about-page/Hero"
 import Info from "../components/about-page/Info"
 import Navbar from "../components/ui/Navbar"
-
+import "tailwindcss/tailwind.css";
 
 
 const about = () => {
@@ -17,7 +17,7 @@ const about = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        <Navbar cta={true} />
+        <Navbar  primary={true}/>
 
       <main className="overflow-hidden">
             <Hero/>

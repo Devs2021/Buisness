@@ -7,7 +7,7 @@ import { useState } from "react";
 import { slideDown } from "../../helpers/animation";
 import { motion } from "framer-motion";
 
-const Navbar = ({ light = false, cta = false, navCenter = false }) => {
+const Navbar = ({ light = false, primary=false, cta = false, navCenter = false }) => {
   const router = useRouter();
 
   const [isOpen, setOpen] = useState(false);
@@ -42,8 +42,8 @@ const Navbar = ({ light = false, cta = false, navCenter = false }) => {
         </div>
         <ul
           className={`md:flex hidden items-center space-x-4 ${
-            light ? "text-white" : "text-black"
-          }`}
+            light ? "text-white" : primary ? 'text-primary' : "text-black"
+          } `}
         >
           {routes.map(({ name, route }, index) => (
             <li key={`${name}-${index}}`}>
